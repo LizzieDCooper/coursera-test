@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--Adding Google Font Oxygen-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+	<!--Adding Google Font Lora-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+	<!--Adding link to Bootstrap/Main CSS documentation-->
+	<link rel="stylesheet" href="../css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../css/main.css">
+	<title>Lizzie's Practice Website</title>
+</head>
+<body>
+	<header>
+		<!--Creating Navigation at top of website-->
+		<nav id="header-nav" class="navbar navbar-default">
+			<div class="container">
+				<div class="navbar-header">
+					<!--Website Logo-->
+					<a href="index.html" class="col-sm-0 col-xs-0">
+						<div id="logo-img" alt="Logo image"></div>
+					</a>
+					<!--Website Name-->
+					<div class="navbar-brand">
+						<a href="index.html"><h1>Lizzie's Practice Website</h1></a>
+						<!--Website Certification img/text-->
+						<p>
+							<img src="../images/pinkstar.png" alt="Certification">
+							<span>Star Fox Certification</span>
+							<!--Alternative Approach with larger img
+								<div id="star-img" alt="Star image"></div>
+								<span>Star Fox</span>
+							-->
+						</p>
+					</div>
+					<!--Drop Down Selection Menu For Small Screens-->
+					<div class="navbar-dropdown">
+						<button class="dropbutton">Dropdown
+						</button>
+						<div class="dropdown-content">
+							<span class="sr-only">test 1</span>
+							<span class="icon-bar">test 2</span>
+							<span class="icon-bar">test 3</span>
+							<span class="icon-bar">test 4</span>
+						</div>
+					</div>
+					<!--
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target='#collapsable-nav' aria-expanded="false">
+						<span class="sr-only">Toggle Navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					-->
+				</div>
+			</div>
+		</nav>
+	</header>
+
+
+	<!--Utilizing Bootstrap and Jquery script for CSS and JS (data libraries so you can write less code and have the same effect)-->
+	<script src="../js/jquery-3.7.1.min.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
+	<script src="../js/script.js"></script>
+</body>
+</html>

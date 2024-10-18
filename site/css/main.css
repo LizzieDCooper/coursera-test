@@ -1,0 +1,294 @@
+/*Universal Styling*/
+*{
+	box-sizing: border-box;
+}
+/*Adding Google Font Oxygen*/
+.oxygen-light {
+  font-family: "Oxygen", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+.oxygen-regular {
+  font-family: "Oxygen", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.oxygen-bold {
+  font-family: "Oxygen", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+/*Adding Google Font Lora*/
+.lora-<uniquifier> {
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+/*Body Styling*/
+body{
+	background-color: #660033;
+	color:#660033;
+	font-size: 16px;
+	font-family: "Oxygen", sans-serif;
+}
+/*HEADER*/
+#header-nav{ /*Header Background*/
+	background-color: pink;
+	border-radius:0;
+	border:0;
+}
+#logo-img{ /*Website Logo*/
+	position:relative;
+	float:left;
+	background: url("../images/fox.jpg") no-repeat;
+	background-size: contain;
+	mix-blend-mode: multiply;
+	width: 150px;
+	height:150px;
+	margin: 10px 15 px 10px 0;
+}
+.navbar-brand{ /*Container for Website Name and Certification*/
+	padding-top:25px;
+}
+.navbar-brand h1{ /*Website Name*/
+	font-family: "Lora", serif;
+	color: #660033;
+	font-size:1.5em;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-shadow: 2px 2px 2px hotpink;
+	margin-top: 0;
+	margin-bottom: 0;
+	line-height: .75;
+}
+.navbar-brand a, .navbar-brand a:hover, .navbar-brand a:focus{
+	text-decoration: none;
+}
+.navbar-brand p{ /*Certification Container*/
+	color: #660033;
+	text-transform: uppercase;
+	font-size: .7em;
+	margin-top: 15px;
+}
+.navbar-brand p span{ /*Certification Text*/
+	vertical-align: middle;
+}
+.navbar-dropdown{ /*Dropdown Button*/
+	float: left;
+ 	overflow: hidden;
+}
+.navbar-dropdown .dropbutton{ /*Dropdown Button Background*/
+ 	border: none;
+ 	outline: none;
+ 	color: white;
+  	padding: 14px 16px;
+	background-color: #660033;
+ 	margin: 0;
+}
+.navbar-dropdown:hover .dropbutton { /*Dropdown Button Hover*/
+  	background-color: hotpink;
+}
+.dropdown-content{ /*Dropdown Content Background*/
+  display: none;
+  position: absolute;
+  background-color: pink;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content span{ /*Dropdown Content Text*/
+  	float: none;
+ 	color: black;
+  	padding: 12px 16px;
+  	text-decoration: none;
+  	display: block;
+  	text-align: left;
+}
+.dropdown-content span:hover { /*Dropdown Content Hover*/
+  background-color: hotpink;
+}
+.navbar-dropdown:hover .dropdown-content{ /*Dropdown Content Display*/
+  display: block;
+}
+
+
+/*Creating 12point Grid For Screen Sizes*/
+@media (min-width: 992px){ /*LARGE SCREENS*/
+  .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, 
+  .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12{
+  float:left;
+  border: 1px solid blue;
+  }
+  .col-lg-1{
+    width: 8.33%;
+  }
+  .col-lg-2{
+    width: 16.66%;
+  }
+  .col-lg-3{
+    width: 25%;
+  }
+  .col-lg-4{
+    width: 33%;
+  }
+  .col-lg-5{
+    width: 41.66%;
+  }
+  .col-lg-6{
+    width: 50%;
+  }
+  .col-lg-7{
+    width: 58.33%;
+  }
+  .col-lg-8{
+    width: 66.66%;
+  }
+  .col-lg-9{
+    width: 74.99%;
+  }
+  .col-lg-10{
+    width: 83.33%;
+  }
+  .col-lg-11{
+    width: 91.66%;
+  }
+  .col-lg-12{
+    width: 100%;
+  }
+}
+@media (min-width: 768px) and (max-width:991px){ /*MEDIUM SCREENS*/
+  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, 
+  .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12{
+  float:left;
+  border: 1px solid blue;
+  }
+  .col-md-1{
+    width: 8.33%;
+  }
+  .col-md-2{
+    width: 16.66%;
+  }
+  .col-md-3{
+    width: 25%;
+  }
+  .col-md-4{
+    width: 33%;
+  }
+  .col-md-5{
+    width: 41.66%;
+  }
+  .col-md-6{
+    width: 50%;
+  }
+  .col-md-7{
+    width: 58.33%;
+  }
+  .col-md-8{
+    width: 66.66%;
+  }
+  .col-md-9{
+    width: 74.99%;
+  }
+  .col-md-10{
+    width: 83.33%;
+  }
+  .col-md-11{
+    width: 91.66%;
+  }
+  .col-md-12{
+    width: 100%;
+  }
+}
+@media (min-width: 577px) and (max-width:767px){ /*SMALL SCREENS*/
+  .col-sm-0,.col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, 
+  .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12{
+  float:left;
+  border: 1px solid blue;
+  }
+  .col-sm-0{
+  	display:none;
+   }
+  .col-sm-1{
+    width: 8.33%;
+  }
+  .col-sm-2{
+    width: 16.66%;
+  }
+  .col-sm-3{
+    width: 25%;
+  }
+  .col-sm-4{
+    width: 33%;
+  }
+  .col-sm-5{
+    width: 41.66%;
+  }
+  .col-sm-6{
+    width: 50%;
+  }
+  .col-sm-7{
+    width: 58.33%;
+  }
+  .col-sm-8{
+    width: 66.66%;
+  }
+  .col-sm-9{
+    width: 74.99%;
+  }
+  .col-sm-10{
+    width: 83.33%;
+  }
+  .col-sm-11{
+    width: 91.66%;
+  }
+  .col-sm-12{
+    width: 100%;
+  }
+}
+@media (max-width:576px){ /*X-SMALL SCREENS*/
+  .col-xs-0,.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, 
+  .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12{
+  float:left;
+  border: 1px solid blue;
+  }
+  .col-xs-0{
+  	display:none;
+   }
+  .col-xs-1{
+    width: 8.33%;
+  }
+  .col-xs-2{
+    width: 16.66%;
+  }
+  .col-xs-3{
+    width: 25%;
+  }
+  .col-xs-4{
+    width: 33%;
+  }
+  .col-xs-5{
+    width: 41.66%;
+  }
+  .col-xs-6{
+    width: 50%;
+  }
+  .col-xs-7{
+    width: 58.33%;
+  }
+  .col-xs-8{
+    width: 66.66%;
+  }
+  .col-xs-9{
+    width: 74.99%;
+  }
+  .col-xs-10{
+    width: 83.33%;
+  }
+  .col-xs-11{
+    width: 91.66%;
+  }
+  .col-xs-12{
+    width: 100%;
+  }
+}
